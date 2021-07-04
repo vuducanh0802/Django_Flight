@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>tasks</title>
+    </head>
+    <body>
+
+
+
+        {% for task in tasks %}
+            <li>{{task}}</li>
+        {% empty%}
+        <li>No Tasks</li>
+        {% endfor %}
+
+        <a href="/tasks/add">Add a old Task</a>
+        <!-- <a href="{ % url 'tasks:add'%}">Add a new Task</a>  path("add",views.add,name = "add" <-- this) -->
+
+    </body>
+</html>
